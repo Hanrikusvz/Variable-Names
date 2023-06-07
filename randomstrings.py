@@ -6,7 +6,9 @@ def generate_random_string(length):
     return ''.join(random.choice(characters) for _ in range(length))
 
 def generate_unique_strings(num_strings):
+#min legth of chars for variable
     min_length = 12
+#max length of chars for variable    
     max_length = 18
 
     strings = set()
@@ -19,7 +21,6 @@ def generate_unique_strings(num_strings):
 
 
 unique_strings = generate_unique_strings(5)
-
 
 for string in unique_strings:
     print(string)
